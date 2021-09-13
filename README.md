@@ -16,3 +16,7 @@ https://whimsical.com/switch-lopardo-TuQrwgx1AMeeouo6WMefMW
 App que permite pasar de una pantalla a otra usando navigation.
 ### Wireframe
 https://whimsical.com/vistas-lopardo-7X2aYDWoTp8PcnKVeg9NDm
+
+## redux.lopardo
+### Descripción
+Se reutiliza el código del ejercicio anterior con la diferencia que ahora utilizando redux la lista de usuario seguidos se comparte en el estado general de la app para que se pueda mantener al ir y volver entre las pantallas, y llevar la cuenta de la cantidad de usuarios seguidos.
