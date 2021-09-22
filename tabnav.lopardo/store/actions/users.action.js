@@ -4,14 +4,6 @@ export const ADD_USER = 'ADD_USER';
 export const SELECT_USER = 'SELECT_USER';
 export const REMOVE_USER = 'REMOVE_USER';
 
-// export const addUser = (user) => ({
-//     type: ADD_USER,
-//     user: {
-//         id: user.id,
-//         name: user.name,
-//     }
-// });
-
 export const addUser = (user) => {
     return async dispatch => {
         try {
@@ -22,17 +14,15 @@ export const addUser = (user) => {
                 },
                 body: JSON.stringify({
                     date: Date.now(),
-                    user,
+                    name: user.name,
                 })
             })
 
             const result = await response.json();
-            console.log(result);
-
             dispatch({
                 type: ADD_USER,
                 user: {
-                    id: user.id,
+                    id: result.name,
                     name: user.name,
                 }
             })
@@ -47,26 +37,17 @@ export const selectUser = (userID) => ({
     userID,
 });
 
-// export const removeUser = (userID) => ({
-//     type: REMOVE_USER,
-//     userID,
-// })
-
 export const removeUser = (userID) => {
     return async dispatch => {
         try {
-            const response = await fetch(`${URL_API}/user.json`, {
+            const response = await fetch(`${URL_API}/user/${userID}.json`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    userID
-                })
             })
 
             const result = await response.json();
-            console.log(result);
 
             dispatch({
                 type: REMOVE_USER,
