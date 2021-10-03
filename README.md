@@ -27,3 +27,9 @@ En esta oportunidad la navegación entre pantallas se maneja por medio de tabs.
 Además, los datos son persistidos en una base de datos firebase. La aplicación soporta grabar usuarios en la BD y borrarlos.
 ### Wireframe
 https://whimsical.com/tabnav-lopardo-Jsbd2XAgvXuSztPVhcNDux
+
+## sqlite.lopardo
+### Descripción
+Se cambia la persistencia de los datos a una BD local usando SQLite
+### Wireframe
+https://whimsical.com/tabnav-lopardo-Jsbd2XAgvXuSztPVhcNDux
