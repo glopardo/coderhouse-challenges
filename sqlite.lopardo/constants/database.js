@@ -1,0 +1,1 @@
+export const URL_API = 'https://app-tabnav-default-rtdb.firebaseio.com/';
