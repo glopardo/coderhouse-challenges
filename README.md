@@ -33,3 +33,10 @@ https://whimsical.com/tabnav-lopardo-Jsbd2XAgvXuSztPVhcNDux
 Se cambia la persistencia de los datos a una BD local usando SQLite
 ### Wireframe
 https://whimsical.com/tabnav-lopardo-Jsbd2XAgvXuSztPVhcNDux
+
+## location.lopardo
+### Descripción
+Se agrega una pantalla mostrando en un mapa la posición del usuario utilizando geolocalización.
+La funcionalidad no es real ya que en este caso no sirve para nada, sólo se agregó para cumplir con la consigna.
+### Wireframe
+https://whimsical.com/location-lopardo-7VDYadHmgMD85qhjh3kYii
